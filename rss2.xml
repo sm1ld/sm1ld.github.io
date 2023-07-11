@@ -9,7 +9,7 @@
     <atom:link href="https://sm1ld.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>今天不努力 明天变垃圾</description>
-    <pubDate>Tue, 11 Jul 2023 03:41:10 GMT</pubDate>
+    <pubDate>Tue, 11 Jul 2023 03:47:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,13 +20,15 @@
       
         
         
-      <description>&lt;h1 id=&quot;Hello&quot;&gt;&lt;a href=&quot;#Hello&quot; class=&quot;headerlink&quot; title=&quot;Hello&quot;&gt;&lt;/a&gt;Hello&lt;/h1&gt;&lt;h2 id=&quot;welcome-to-sm1ld’s-blog&quot;&gt;&lt;a href=&quot;#welcome-to-sm1ld’s</description>
+      <description>&lt;h1 id=&quot;Hello&quot;&gt;&lt;a href=&quot;#Hello&quot; class=&quot;headerlink&quot; title=&quot; Hello&quot;&gt;&lt;/a&gt;&lt;center&gt; Hello&lt;/h1&gt;&lt;h2 id=&quot;welcome-to-sm1ld’s-blog&quot;&gt;&lt;a href=&quot;#welcome-</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h1><h2 id="welcome-to-sm1ld’s-blog"><a href="#welcome-to-sm1ld’s-blog" class="headerlink" title="welcome to sm1ld’s blog"></a>welcome to sm1ld’s blog</h2><p>This is a blog that took me about eight hours to build. I wish I can learn more and achieve my goal as soon as possible.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="Hello"><a href="#Hello" class="headerlink" title=" Hello"></a><center> Hello</h1><h2 id="welcome-to-sm1ld’s-blog"><a href="#welcome-to-sm1ld’s-blog" class="headerlink" title=" welcome to sm1ld’s blog"></a><center> welcome to sm1ld’s blog</h2><p>This is a blog that took me about eight hours to build. I wish I can learn more and achieve my goal as soon as possible.</p>]]></content:encoded>
       
+      
+      <category domain="https://sm1ld.github.io/categories/nonsense/">nonsense</category>
       
       
       
