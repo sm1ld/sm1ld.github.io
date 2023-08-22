@@ -9,8 +9,40 @@
     <atom:link href="https://sm1ld.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>今天不努力 明天变垃圾</description>
-    <pubDate>Tue, 25 Jul 2023 09:31:59 GMT</pubDate>
+    <pubDate>Tue, 01 Aug 2023 13:03:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>dos</title>
+      <link>https://sm1ld.github.io/2023/08/01/20-40-21/</link>
+      <guid>https://sm1ld.github.io/2023/08/01/20-40-21/</guid>
+      <pubDate>Tue, 01 Aug 2023 12:40:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;b&gt;dos命令&lt;/b&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dir 列出当前目录的文件及夹 &lt;/li&gt;
+&lt;li&gt;cd*&#92;* 进入指定目录   &lt;/li&gt;
+&lt;li&gt;cd.. 返回上层目录     &lt;/li&gt;
+&lt;li&gt;cd&#92;or&amp;#x2F;  返回盘符   &lt;/li&gt;
+&lt;li&gt;md</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><b>dos命令</b>  </p><ul><li>dir 列出当前目录的文件及夹 </li><li>cd*\* 进入指定目录   </li><li>cd.. 返回上层目录     </li><li>cd\or&#x2F;  返回盘符   </li><li>md 新建文件</li><li>rd 删除空文件夹</li><li>del 删除文件  </li><li>cls 清屏</li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      
+      
+      <category domain="https://sm1ld.github.io/tags/dos/">dos</category>
+      
+      
+      <comments>https://sm1ld.github.io/2023/08/01/20-40-21/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>jsnote</title>
