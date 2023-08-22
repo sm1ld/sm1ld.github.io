@@ -43,13 +43,13 @@
       
       <description>&lt;p&gt;在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“&amp;#x2F;&#92;b(?:(?:https?|ftp):&#92;&amp;#x2F;&#92;&amp;#x2F;|www.)[-a-z0-9+&amp;amp;@#/%?&amp;#x3D;~&lt;em&gt;|!:,.;]*[-a-z0-9+&amp;amp;@#/%&amp;#x3D;~&lt;/em&gt;|]&amp;#x2F;i”    &lt;/p&gt;
+&lt;p&gt;“&amp;#x2F;&#92;b(?:(?:https?|ftp):&#92;&amp;#x2F;&#92;&amp;#x2F;|www&#92;.)[-a-z0-9+&amp;amp;@#&#92;&amp;#x2F;%?&amp;#x3D;~&lt;em&gt;|!:,.;]*[-a-z0-9+&amp;amp;@#&#92;&amp;#x2F;%&amp;#x3D;~&lt;/em&gt;|]&amp;#x2F;i”    &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做个纪念&lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<p>在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）</p><blockquote><p>“&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www.)[-a-z0-9+&amp;@#/%?&#x3D;~<em>|!:,.;]*[-a-z0-9+&amp;@#/%&#x3D;~</em>|]&#x2F;i”    </p></blockquote><p>然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做个纪念</p><span id="more"></span><blockquote><p>正则表达式是一种用于匹配和操作字符串的工具，它使用特定的语法来描述模式。下面是一些常见的正则表达式语法：<br>1.字符匹配：<br>普通字符：直接匹配文本中的字符。<br>元字符：具有特殊含义的字符，如.、*、?等。<br>转义字符：用于匹配具有特殊含义的字符，如\、^、$等。     </p></blockquote><blockquote><p>2.字符类：<br>方括号([])：匹配方括号中的任意一个字符。<br>横线(-)：匹配指定范围内的字符，如[a-z]匹配任意小写字母。      </p></blockquote><blockquote><p>3.重复限定符：<br>*：匹配前一个元素0次或多次。<br>+：匹配前一个元素1次或多次。<br>?：匹配前一个元素0次或1次。<br>{n}：匹配前一个元素恰好n次。<br>{n,}：匹配前一个元素至少n次。<br>{n,m}：匹配前一个元素至少n次，最多m次。</p></blockquote><blockquote><p>4.边界匹配：<br>^：匹配字符串的开始位置。<br>$：匹配字符串的结束位置。<br>\b：匹配单词的边界。            </p></blockquote><blockquote><p>5.分组和捕获：<br>( )：将多个元素组合为一个单元。<br>|：匹配多个选择项，类似于逻辑或。<br>\1, \2, …：引用前面的分组匹配结果。   </p></blockquote><blockquote><p>6.预定义字符类：<br>\d：匹配任意数字字符。<br>\w：匹配任意字母、数字或下划线字符。<br>\s：匹配任意空白字符。    </p></blockquote><blockquote><p>这只是正则表达式语法的一小部分，还有很多其他的语法规则和特性。使用正则表达式时，可以根据具体需求和匹配规则进行组合和使用。  </p></blockquote>]]></content:encoded>
+      <content:encoded><![CDATA[<p>在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）</p><blockquote><p>“&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www\.)[-a-z0-9+&amp;@#\&#x2F;%?&#x3D;~<em>|!:,.;]*[-a-z0-9+&amp;@#\&#x2F;%&#x3D;~</em>|]&#x2F;i”    </p></blockquote><p>然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做个纪念</p><span id="more"></span><blockquote><p>正则表达式是一种用于匹配和操作字符串的工具，它使用特定的语法来描述模式。下面是一些常见的正则表达式语法：<br>1.字符匹配：<br>普通字符：直接匹配文本中的字符。<br>元字符：具有特殊含义的字符，如.、*、?等。<br>转义字符：用于匹配具有特殊含义的字符，如\、^、$等。     </p></blockquote><blockquote><p>2.字符类：<br>方括号([])：匹配方括号中的任意一个字符。<br>横线(-)：匹配指定范围内的字符，如[a-z]匹配任意小写字母。      </p></blockquote><blockquote><p>3.重复限定符：<br>*：匹配前一个元素0次或多次。<br>+：匹配前一个元素1次或多次。<br>?：匹配前一个元素0次或1次。<br>{n}：匹配前一个元素恰好n次。<br>{n,}：匹配前一个元素至少n次。<br>{n,m}：匹配前一个元素至少n次，最多m次。</p></blockquote><blockquote><p>4.边界匹配：<br>^：匹配字符串的开始位置。<br>$：匹配字符串的结束位置。<br>\b：匹配单词的边界。            </p></blockquote><blockquote><p>5.分组和捕获：<br>( )：将多个元素组合为一个单元。<br>|：匹配多个选择项，类似于逻辑或。<br>\1, \2, …：引用前面的分组匹配结果。   </p></blockquote><blockquote><p>6.预定义字符类：<br>\d：匹配任意数字字符。<br>\w：匹配任意字母、数字或下划线字符。<br>\s：匹配任意空白字符。    </p></blockquote><blockquote><p>这只是正则表达式语法的一小部分，还有很多其他的语法规则和特性。使用正则表达式时，可以根据具体需求和匹配规则进行组合和使用。  </p></blockquote>]]></content:encoded>
       
       
       <category domain="https://sm1ld.github.io/categories/note/">note</category>

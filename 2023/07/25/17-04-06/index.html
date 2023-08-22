@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"sm1ld.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）  “&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www.)[-a-z0-9+&amp;@#&#x2F;%?&#x3D;~|!:,.;]*[-a-z0-9+&amp;@#&#x2F;%&#x3D;~|]&#x2F;i”      然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做">
+  <meta name="description" content="在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）  “&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www\.)[-a-z0-9+&amp;@#\&#x2F;%?&#x3D;~|!:,.;]*[-a-z0-9+&amp;@#\&#x2F;%&#x3D;~|]&#x2F;i”      然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jsnote">
 <meta property="og:url" content="https://sm1ld.github.io/2023/07/25/17-04-06/index.html">
 <meta property="og:site_name" content="SM1LD">
-<meta property="og:description" content="在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）  “&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www.)[-a-z0-9+&amp;@#&#x2F;%?&#x3D;~|!:,.;]*[-a-z0-9+&amp;@#&#x2F;%&#x3D;~|]&#x2F;i”      然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做">
+<meta property="og:description" content="在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）  “&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www\.)[-a-z0-9+&amp;@#\&#x2F;%?&#x3D;~|!:,.;]*[-a-z0-9+&amp;@#\&#x2F;%&#x3D;~|]&#x2F;i”      然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-25T09:04:06.000Z">
-<meta property="article:modified_time" content="2023-08-22T06:32:08.143Z">
+<meta property="article:modified_time" content="2023-08-22T06:36:53.311Z">
 <meta property="article:author" content="sm1ld">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
@@ -228,7 +228,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-22 14:32:08" itemprop="dateModified" datetime="2023-08-22T14:32:08+08:00">2023-08-22</time>
+                <time title="修改时间：2023-08-22 14:36:53" itemprop="dateModified" datetime="2023-08-22T14:36:53+08:00">2023-08-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -274,7 +274,7 @@
       
         <p>在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）</p>
 <blockquote>
-<p>“&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www.)[-a-z0-9+&amp;@#/%?&#x3D;~<em>|!:,.;]*[-a-z0-9+&amp;@#/%&#x3D;~</em>|]&#x2F;i”    </p>
+<p>“&#x2F;\b(?:(?:https?|ftp):\&#x2F;\&#x2F;|www\.)[-a-z0-9+&amp;@#\&#x2F;%?&#x3D;~<em>|!:,.;]*[-a-z0-9+&amp;@#\&#x2F;%&#x3D;~</em>|]&#x2F;i”    </p>
 </blockquote>
 <p>然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做个纪念</p>
 <span id="more"></span>
