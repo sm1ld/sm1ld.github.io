@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>httpnote</title>
+      <link href="/2023/07/25/17-04-06/"/>
+      <url>/2023/07/25/17-04-06/</url>
+      
+        <content type="html"><![CDATA[<p>attach一段对http的科学解释:</p><blockquote><p>HTTP（Hypertext Transfer Protocol）是一种用于在计算机之间传输超文本（Hypertext）文档的应用层协议。它是构建在TCP（Transmission Control Protocol）之上的协议，用于实现在Web上的数据传输。HTTP是Web的基础，它定义了客户端和服务器之间的通信规则，使我们能够在浏览器中浏览网页、发送和接收数据等。  </p></blockquote><p>主要定义的事情就是:<br>client–&gt;(user agent用户代理&#x2F;proxy代理)发送请求–&gt;server<br>client&lt;–(user agent用户代理&#x2F;proxy代理)发送请求&lt;–server<br>#基本介绍#</p><span id="more"></span><p>##user agent##<br>浏览器通常作为发送请求的实体,发送最初请求获取页面的 HTML 文档。解析文档，并发送其他请求，获取响应的可执行脚本、布局信息（CSS）以及其他页面内的资源（一般是图片和视频等）。浏览器将这些资源整合到一起，展现出一个完整的文档，即 Web 页面。之后的阶段，浏览器中执行的脚本可以获取更多资源，同时浏览器相应地更新网页。</p><p>##web server##<br>服务端(可以是多台机器,共享负载的一组服务器集群（负载均衡）或是其他类型的软件（如缓存、数据库服务、电商服务等）)为客户端提供所需文档</p><p>##proxy##<br>应用层参与消息传递</p><p>##HTTP和网络连接##<br>HTTP&#x2F;1.0 默认为每一对HTTP请求&#x2F;响应都打开一个单独的 TCP 连接</p><p>##request请求##</p><pre><code>GET(method) /(path) HTTP/1.1(protocol version)    Host: developer.mozilla.org   Accept-Language: zh  (headers标头) ``` </code></pre><p>method:定义客户端执行的动作<br>path:去除部分信息(https:&#x2F;&#x2F;;域名;端口)</p><p>##response响应##<br>    HTTP&#x2F;1.1(protocol version)  200(status code) OK(status message)<br>    Date: Sat, 09 Oct 2010 14:28:02 GMT<br>    Server: Apache<br>    Last-Modified: Tue, 01 Dec 2009 20:18:22 GMT<br>    ETag: “51142bc1-7449-479b075b2891b”<br>    Accept-Ranges: bytes<br>    Content-Length: 29769<br>    Content-Type: text&#x2F;html(headers)</p><p>##HTTP Cookie##<br>HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据.</p><p>服务器使用 Set-Cookie 响应头部向用户代理（一般是浏览器）发送 Cookie 信息。</p><pre><code>Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;</code></pre><p>服务器发送标头告知客户端存储一对 cookie:</p><pre><code>HTTP/1.0 200 OK  Content-type: text/html   Set-Cookie: yummy_cookie=choco     Set-Cookie: tasty_cookie=strawberry       </code></pre><p>现在，对该服务器发起的每一次新请求，浏览器都会将之前保存的 Cookie 信息通过 Cookie 请求头部再发送给服务器:</p><pre><code>GET /sample_page.html HTTP/1.1   Host: www.example.org   Cookie: yummy_cookie=choco; tasty_cookie=strawberry   </code></pre><p>#METHOD#<br>##GET##<br>HTTP GET 方法请求指定资源的表示。使用 GET 的请求应该只用于请求数据，而不应该包含数据。</p><pre><code>GET /index.html    </code></pre><p>query string:</p><pre><code>?key1=value1&amp;key2=value2&amp;key3=value3</code></pre><p>##POST##<br>HTTP POST 方法发送数据给服务器。请求主体的类型由 Content-Type 标头指定。(非幂等)</p><pre><code>POST /test HTTP/1.1     Host: foo.example     Content-Type: application/x-www-form-urlencoded      Content-Length: 27  field1=value1&amp;field2=value2</code></pre><p>#HEADER#</p><p>##Content-Type##<br>实体头部用于指示资源的 MIME 类型 media type 。</p><pre><code>application/x-www-form-urlencoded :query string键值对的结构，键值对之间使用 &amp; 分割，键与值之间使用 = 分割multipart/form-data :这是 form 表单提交的数据格式（需要在 from 标签上加上 enctyped=&quot;multipart/form-data&quot;），通常用于 HTML 提交图片或者文件application/json:此时 body 数据为 json 格式，json 格式就是源自 js 的对象的格式。用一个 &#123; &#125; 括住，里面有多个键值对，键值对之间使用逗号分割，键和值之间使用冒号分割</code></pre><p>##Host##<br>请求头指明了请求将要发送到的服务器主机名和端口号。</p><pre><code>Host: &lt;host&gt;:&lt;port&gt;</code></pre><p>##Origin##<br>请求标头 Origin 表示了请求的来源（协议、主机、端口）。</p><pre><code>Origin: null   Origin: &lt;scheme&gt;://&lt;hostname&gt;   Origin: &lt;scheme&gt;://&lt;hostname&gt;:&lt;port&gt;   </code></pre><p>##Referer##<br>Referer 请求头包含了当前请求页面的来源页面的地址，即表示当前页面是通过此来源页面里的链接进入的</p><pre><code>Referer: &lt;url&gt;</code></pre><p>##User-Agent##<br>User-Agent 首部包含了一个特征字符串，用来让网络协议的对端来识别发起请求的用户代理软件的应用类型、操作系统、软件开发商以及版本号</p><pre><code>User-Agent: &lt;product&gt; / &lt;product-version&gt; &lt;comment&gt;   </code></pre><p>##X-Forwarded-For##<br>X-Forwarded-For（XFF）请求标头是一个事实上的用于标识通过代理服务器连接到 web 服务器的客户端的原始 IP 地址的标头。</p><pre><code>X-Forwarded-For: &lt;client&gt;, &lt;proxy1&gt;, &lt;proxy2&gt;</code></pre><p>有题目里用Client-Ip</p><p>有待补充…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> http </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>cssnote</title>
       <link href="/2023/07/11/17-48-58/"/>
       <url>/2023/07/11/17-48-58/</url>
