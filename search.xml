@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>java编码错误</title>
+      <link href="/2023/10/17/20-24-47/"/>
+      <url>/2023/10/17/20-24-47/</url>
+      
+        <content type="html"><![CDATA[<p>跟着黑马程序员敲javacode的时候出现了一个编译错误,这里记录一下   </p><p>ScannerTest.java源代码:</p><pre><code>import java.util.Scanner;public class ScannerTest&#123;    public static void main(String[] args) &#123;              Scanner var = new Scanner(System.in);        System.out.println(&quot;输入两个数字:&quot;);        int a = var.nextInt();        int b = var.nextInt();        int c= a+b;         System.out.println(c);        var.close();    &#125;&#125;</code></pre><p>cmd javac时报错:</p><pre><code>ScannerTest.java:1: 错误: 需要 class、interface、enum 或 record锘縤mport java.util.Scanner;  </code></pre><span id="more"></span><p>但是vscode的终端运行无误.(已知文件名和类名相同,java环境无误(反正目前没问题)  ) </p><p>后来求助了大佬们,发现是这个文件保存时是utf-8编码(无BOM),而cmd读取时应该是GBK编码,导致无法正确编译.(并且有建议用IDEA写java)</p><p>解决方案:</p><ol><li><p>将文件保存为GBK格式(不推荐):<br>此时,cmd无报错,但终端运行中文出现”??????…”的情况,猜测是终端以utf-8读取文件出错,这里不予测试.</p></li><li><p>cmd javac的语句加上encoding:<br>(注意这个文件保存时是无BOM的utf-8,否则会出现类似” 非法字符: ‘\ufeff’”的报错):   </p><pre><code> javac -encoding &quot;UTF-8&quot; ScannerTest.java</code></pre></li></ol><p><a href="https://blog.csdn.net/qq_36863995/article/details/79290959">参考csdn文章链接</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javaerror </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>httpnote</title>
       <link href="/2023/10/15/20-53-49/"/>
       <url>/2023/10/15/20-53-49/</url>
