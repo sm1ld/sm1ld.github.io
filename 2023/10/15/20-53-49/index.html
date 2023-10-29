@@ -28,7 +28,7 @@
 <meta property="og:description" content="attach一段对http的科学解释:  HTTP（Hypertext Transfer Protocol）是一种用于在计算机之间传输超文本（Hypertext）文档的应用层协议。它是构建在TCP（Transmission Control Protocol）之上的协议，用于实现在Web上的数据传输。HTTP是Web的基础，它定义了客户端和服务器之间的通信规则，使我们能够在浏览器中浏览网页、发送和接">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-15T12:53:49.000Z">
-<meta property="article:modified_time" content="2023-10-15T13:02:18.761Z">
+<meta property="article:modified_time" content="2023-10-22T08:08:38.848Z">
 <meta property="article:author" content="sm1ld">
 <meta property="article:tag" content="http">
 <meta name="twitter:card" content="summary">
@@ -199,7 +199,7 @@
     <link itemprop="mainEntityOfPage" href="https://sm1ld.github.io/2023/10/15/20-53-49/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="sm1ld">
       <meta itemprop="description" content="今天不努力 明天变垃圾">
     </span>
@@ -220,10 +220,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-10-15 20:53:49 / 修改时间：21:02:18" itemprop="dateCreated datePublished" datetime="2023-10-15T20:53:49+08:00">2023-10-15</time>
+              <time title="创建时间：2023-10-15 20:53:49" itemprop="dateCreated datePublished" datetime="2023-10-15T20:53:49+08:00">2023-10-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-22 16:08:38" itemprop="dateModified" datetime="2023-10-22T16:08:38+08:00">2023-10-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -282,7 +288,7 @@
 Host: developer.mozilla.org	   	
 Accept-Language: zh  (headers标头) ``` 
 </code></pre>
-<p>method:定义客户端执行的动作<br>path:去除部分信息(https:&#x2F;&#x2F;;域名;端口)</p>
+<p><strong>method</strong>:定义客户端执行的动作<br><strong>path</strong>:去除部分信息(https:&#x2F;&#x2F;;域名;端口)</p>
 <h2 id="response响应"><a href="#response响应" class="headerlink" title="response响应"></a>response响应</h2><pre><code>HTTP/1.1(protocol version)  200(status code) OK(status message)   
 Date: Sat, 09 Oct 2010 14:28:02 GMT  
 Server: Apache   
@@ -293,7 +299,7 @@ Content-Length: 29769
 Content-Type: text/html(headers)
 </code></pre>
 <h2 id="HTTP-Cookie"><a href="#HTTP-Cookie" class="headerlink" title="HTTP Cookie"></a>HTTP Cookie</h2><p>HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据.</p>
-<p>服务器使用 Set-Cookie 响应头部向用户代理（一般是浏览器）发送 Cookie 信息。</p>
+<p>服务器使用 <code>Set-Cookie</code> 响应头部向用户代理（一般是浏览器）发送 Cookie 信息。</p>
 <pre><code>Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;
 </code></pre>
 <p>服务器发送标头告知客户端存储一对 cookie:</p>
@@ -302,7 +308,7 @@ Content-type: text/html
 Set-Cookie: yummy_cookie=choco     
 Set-Cookie: tasty_cookie=strawberry       
 </code></pre>
-<p>现在，对该服务器发起的每一次新请求，浏览器都会将之前保存的 Cookie 信息通过 Cookie 请求头部再发送给服务器:</p>
+<p>现在，对该服务器发起的每一次新请求，浏览器都会将之前保存的 Cookie 信息通过 <code>Cookie</code> 请求头部再发送给服务器:</p>
 <pre><code>GET /sample_page.html HTTP/1.1   
 Host: www.example.org   
 Cookie: yummy_cookie=choco; tasty_cookie=strawberry   
@@ -313,7 +319,7 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 <p>query string:</p>
 <pre><code>?key1=value1&amp;key2=value2&amp;key3=value3
 </code></pre>
-<h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h2><p>HTTP POST 方法发送数据给服务器。请求主体的类型由 Content-Type 标头指定。(非幂等)</p>
+<h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h2><p>HTTP POST 方法发送数据给服务器。请求主体的类型由 <code>Content-Type</code> 标头指定。(非幂等)</p>
 <pre><code>POST /test HTTP/1.1     
 Host: foo.example     
 Content-Type: application/x-www-form-urlencoded      
@@ -334,21 +340,21 @@ application/json:
 <h2 id="Host"><a href="#Host" class="headerlink" title="Host"></a>Host</h2><p>请求头指明了请求将要发送到的服务器主机名和端口号。</p>
 <pre><code>Host: &lt;host&gt;:&lt;port&gt;
 </code></pre>
-<h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>请求标头 Origin 表示了请求的来源（协议、主机、端口）。</p>
+<h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>请求标头 <code>Origin</code> 表示了请求的来源（协议、主机、端口）。</p>
 <pre><code>Origin: null   
 Origin: &lt;scheme&gt;://&lt;hostname&gt;   
 Origin: &lt;scheme&gt;://&lt;hostname&gt;:&lt;port&gt;   
 </code></pre>
-<h2 id="Referer"><a href="#Referer" class="headerlink" title="Referer"></a>Referer</h2><p>Referer 请求头包含了当前请求页面的来源页面的地址，即表示当前页面是通过此来源页面里的链接进入的</p>
+<h2 id="Referer"><a href="#Referer" class="headerlink" title="Referer"></a>Referer</h2><p><code>Referer</code> 请求头包含了当前请求页面的来源页面的地址，即表示当前页面是通过此来源页面里的链接进入的</p>
 <pre><code>Referer: &lt;url&gt;
 </code></pre>
-<h2 id="User-Agent"><a href="#User-Agent" class="headerlink" title="User-Agent"></a>User-Agent</h2><p>User-Agent 首部包含了一个特征字符串，用来让网络协议的对端来识别发起请求的用户代理软件的应用类型、操作系统、软件开发商以及版本号</p>
+<h2 id="User-Agent"><a href="#User-Agent" class="headerlink" title="User-Agent"></a>User-Agent</h2><p><code>User-Agent</code> 首部包含了一个特征字符串，用来让网络协议的对端来识别发起请求的用户代理软件的应用类型、操作系统、软件开发商以及版本号</p>
 <pre><code>User-Agent: &lt;product&gt; / &lt;product-version&gt; &lt;comment&gt;   
 </code></pre>
-<h2 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h2><p>X-Forwarded-For（XFF）请求标头是一个事实上的用于标识通过代理服务器连接到 web 服务器的客户端的原始 IP 地址的标头。</p>
+<h2 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h2><p><code>X-Forwarded-For</code>（XFF）请求标头是一个事实上的用于标识通过代理服务器连接到 web 服务器的客户端的原始 IP 地址的标头。</p>
 <pre><code>X-Forwarded-For: &lt;client&gt;, &lt;proxy1&gt;, &lt;proxy2&gt;
 </code></pre>
-<p>有题目里用Client-Ip</p>
+<p>有题目里用<code>Client-Ip</code></p>
 <p>有待补充…</p>
 
     </div>
@@ -467,7 +473,7 @@ Origin: &lt;scheme&gt;://&lt;hostname&gt;:&lt;port&gt;
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="sm1ld"
-      src="/images/avatar.png">
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">sm1ld</p>
   <div class="site-description" itemprop="description">今天不努力 明天变垃圾</div>
 </div>
