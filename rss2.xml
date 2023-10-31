@@ -9,8 +9,39 @@
     <atom:link href="https://sm1ld.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>今天不努力 明天变垃圾</description>
-    <pubDate>Tue, 17 Oct 2023 12:47:51 GMT</pubDate>
+    <pubDate>Tue, 31 Oct 2023 12:15:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>javacommand</title>
+      <link>https://sm1ld.github.io/2023/10/31/19-59-13/</link>
+      <guid>https://sm1ld.github.io/2023/10/31/19-59-13/</guid>
+      <pubDate>Tue, 31 Oct 2023 11:59:13 GMT</pubDate>
+      
+      <description>&lt;p&gt;IntelliJ IDEA提供了许多常用的代码模板快捷键，以帮助程序员更快地编写代码。&lt;br&gt;以下是一些常用的代码模板快捷键和相应的功能：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;psvm&lt;/code&gt;：生成主函数（public static void main(String[] args)）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;sout&lt;/code&gt;：生成&lt;code&gt;System.out.println()&lt;/code&gt;语句。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;soutv&lt;/code&gt;：生成&lt;code&gt;System.out.println(variable)&lt;/code&gt;，其中&lt;code&gt;variable&lt;/code&gt;是光标所在位置的变量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>IntelliJ IDEA提供了许多常用的代码模板快捷键，以帮助程序员更快地编写代码。<br>以下是一些常用的代码模板快捷键和相应的功能：</p><ol><li><p><code>psvm</code>：生成主函数（public static void main(String[] args)）。</p></li><li><p><code>sout</code>：生成<code>System.out.println()</code>语句。</p></li><li><p><code>soutv</code>：生成<code>System.out.println(variable)</code>，其中<code>variable</code>是光标所在位置的变量。</p></li></ol><span id="more"></span><ol start="4"><li><p><code>fori</code>：生成基本的<code>for</code>循环结构。</p></li><li><p><code>iter</code>：生成增强的<code>for-each</code>循环结构。</p></li><li><p><code>ifn</code>：生成<code>if (variable == null)</code> 检查。</p></li><li><p><code>inn</code>：生成<code>if (variable != null)</code> 检查。</p></li><li><p><code>prsf</code>：生成<code>private static final</code> 常量。</p></li><li><p><code>psf</code>：生成<code>public static final</code> 常量。</p></li><li><p><code>psfi</code>：生成<code>public static final int</code> 整数常量。</p></li><li><p><code>psfs</code>：生成<code>public static final String</code> 字符串常量。</p></li><li><p><code>try</code>：生成<code>try-catch</code>块。</p></li><li><p><code>tryf</code>：生成<code>try-finally</code>块。</p></li><li><p><code>tryr</code>：生成<code>try-catch</code>-<code>finally</code>块。</p></li><li><p><code>ifelse</code>：生成<code>if-else</code>语句块。</p></li><li><p><code>else</code>：生成<code>else</code>语句。</p></li><li><p><code>switch</code>：生成<code>switch</code>语句块。</p></li><li><p><code>case</code>：生成<code>case</code>语句。</p></li><li><p><code>while</code>：生成<code>while</code>循环。</p></li><li><p><code>do</code>：生成<code>do-while</code>循环。</p></li><li><p><code>serr</code>：生成<code>System.err.println()</code>语句。</p></li><li><p><code>soutm</code>：生成方法的注释文档。</p></li><li><p><code>soutp</code>：生成方法参数的注释文档。</p></li><li><p><code>ifn</code>：生成<code>if (variable == null)</code> 语句块。</p></li><li><p><code>inn</code>：生成<code>if (variable != null)</code> 语句块。</p></li><li><p><code>arr.fori</code> : 生成<code>for&#39;(int i = 0; i &lt; arr.length; i++) </code>的数组迭代代码块</p></li><li><p>…</p></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      
+      
+      <category domain="https://sm1ld.github.io/tags/java/">java</category>
+      
+      
+      <comments>https://sm1ld.github.io/2023/10/31/19-59-13/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>java编码错误</title>
