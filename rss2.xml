@@ -9,7 +9,7 @@
     <atom:link href="https://sm1ld.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>今天不努力 明天变垃圾</description>
-    <pubDate>Tue, 07 Nov 2023 02:26:59 GMT</pubDate>
+    <pubDate>Tue, 07 Nov 2023 02:39:19 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,21 +18,25 @@
       <guid>https://sm1ld.github.io/2023/11/07/10-25-11/</guid>
       <pubDate>Tue, 07 Nov 2023 02:25:11 GMT</pubDate>
       
-        
-        
       <description>&lt;p&gt;XPath（XML Path Language）是一种用于在 XML 文档中定位和选择数据的查询语言。以下是一些常用的 XPath 语法和示例：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;选择元素：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;/element&lt;/code&gt;：选择根元素下名</description>
-        
+&lt;li&gt;&lt;code&gt;/element&lt;/code&gt;：选择根元素下名为 “element” 的元素。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;//element&lt;/code&gt;：选择文档中所有名为 “element” 的元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/element/@attribute&lt;/code&gt;：选择根元素下名为 “element” 的元素的 “attribute” 属性。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;//element/@attribute&lt;/code&gt;：选择文档中所有名为 “element” 的元素的 “attribute” 属性。</description>
       
       
       
-      <content:encoded><![CDATA[<p>XPath（XML Path Language）是一种用于在 XML 文档中定位和选择数据的查询语言。以下是一些常用的 XPath 语法和示例：</p><ol><li><p>选择元素：</p><ul><li><code>/element</code>：选择根元素下名为 “element” 的元素。</li><li><code>//element</code>：选择文档中所有名为 “element” 的元素。</li></ul></li><li><p>选择属性：</p><ul><li><code>/element/@attribute</code>：选择根元素下名为 “element” 的元素的 “attribute” 属性。</li><li><code>//element/@attribute</code>：选择文档中所有名为 “element” 的元素的 “attribute” 属性。</li></ul></li><li><p>使用通配符：</p><ul><li><code>/bookstore/*</code>：选择根元素下所有子元素。</li><li><code>//*[@lang=&#39;en&#39;]</code>：选择所有带有 “lang” 属性且属性值为 “en” 的元素。</li></ul></li><li><p>索引：</p><ul><li><code>/bookstore/book[1]</code>：选择根元素下的第一个 “book” 元素。</li><li><code>/bookstore/book[last()]</code>：选择根元素下的最后一个 “book” 元素。</li><li><code>/bookstore/book[position() &lt; 3]</code>：选择根元素下的前两个 “book” 元素。</li></ul></li><li><p>使用逻辑运算符：</p><ul><li><code>//book[@price&gt;35 and @lang=&#39;en&#39;]</code>：选择价格大于 35 并且语言是 “en” 的所有 “book” 元素。</li></ul></li><li><p>使用通配符和索引结合：</p><ul><li><code>/bookstore/book/*[3]</code>：选择根元素下的所有 “book” 元素的第三个子元素。</li></ul></li><li><p>使用函数：</p><ul><li><code>//book[starts-with(@title, &#39;XML&#39;)]</code>：选择标题以 “XML” 开头的所有 “book” 元素。</li></ul></li><li><p>轴（Axis）：</p><ul><li><code>//book/ancestor::bookstore</code>：选择所有 “book” 元素的祖先 “bookstore” 元素。</li><li><code>//book/following-sibling::book</code>：选择所有 “book” 元素后面的同级兄弟 “book” 元素。</li></ul></li><li><p>选择文本内容：</p><ul><li><code>//book/title/text()</code>：选择所有 “book” 元素的标题文本内容。</li></ul></li><li><p>选择多个条件：</p></li></ol><ul><li><code>//book[@price&gt;35 and (@lang=&#39;en&#39; or @lang=&#39;fr&#39;)]</code>：选择价格大于 35 并且语言是 “en” 或 “fr” 的所有 “book” 元素。</li></ul><p>这些是 XPath 的一些常用语法。XPath 具有强大的功能，可以用于从 XML 文档中选择、定位和提取所需的数据。根据需要，可以进一步深入学习 XPath 并使用更复杂的表达式和函数。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>XPath（XML Path Language）是一种用于在 XML 文档中定位和选择数据的查询语言。以下是一些常用的 XPath 语法和示例：</p><ol><li><p>选择元素：</p><ul><li><code>/element</code>：选择根元素下名为 “element” 的元素。</li><li><code>//element</code>：选择文档中所有名为 “element” 的元素。</li></ul></li><li><p>选择属性：</p><ul><li><code>/element/@attribute</code>：选择根元素下名为 “element” 的元素的 “attribute” 属性。</li><li><code>//element/@attribute</code>：选择文档中所有名为 “element” 的元素的 “attribute” 属性。<span id="more"></span></li></ul></li><li><p>使用通配符：</p><ul><li><code>/bookstore/*</code>：选择根元素下所有子元素。</li><li><code>//*[@lang=&#39;en&#39;]</code>：选择所有带有 “lang” 属性且属性值为 “en” 的元素。</li></ul></li><li><p>索引：</p><ul><li><code>/bookstore/book[1]</code>：选择根元素下的第一个 “book” 元素。</li><li><code>/bookstore/book[last()]</code>：选择根元素下的最后一个 “book” 元素。</li><li><code>/bookstore/book[position() &lt; 3]</code>：选择根元素下的前两个 “book” 元素。</li></ul></li><li><p>使用逻辑运算符：</p><ul><li><code>//book[@price&gt;35 and @lang=&#39;en&#39;]</code>：选择价格大于 35 并且语言是 “en” 的所有 “book” 元素。</li></ul></li><li><p>使用通配符和索引结合：</p><ul><li><code>/bookstore/book/*[3]</code>：选择根元素下的所有 “book” 元素的第三个子元素。</li></ul></li><li><p>使用函数：</p><ul><li><code>//book[starts-with(@title, &#39;XML&#39;)]</code>：选择标题以 “XML” 开头的所有 “book” 元素。</li></ul></li><li><p>轴（Axis）：</p><ul><li><code>//book/ancestor::bookstore</code>：选择所有 “book” 元素的祖先 “bookstore” 元素。</li><li><code>//book/following-sibling::book</code>：选择所有 “book” 元素后面的同级兄弟 “book” 元素。</li></ul></li><li><p>选择文本内容：</p><ul><li><code>//book/title/text()</code>：选择所有 “book” 元素的标题文本内容。</li></ul></li><li><p>选择多个条件：</p></li></ol><ul><li><code>//book[@price&gt;35 and (@lang=&#39;en&#39; or @lang=&#39;fr&#39;)]</code>：选择价格大于 35 并且语言是 “en” 或 “fr” 的所有 “book” 元素。</li></ul><p>这些是 XPath 的一些常用语法。XPath 具有强大的功能，可以用于从 XML 文档中选择、定位和提取所需的数据。根据需要，可以进一步深入学习 XPath 并使用更复杂的表达式和函数。</p>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/%E7%88%AC%E8%99%AB/">爬虫</category>
       
       
       <category domain="https://sm1ld.github.io/tags/xpath/">xpath</category>
@@ -58,10 +62,10 @@
       
       
       
-      <content:encoded><![CDATA[<p>在 XML 中，一些字符拥有特殊的意义。</p><p>如果您把字符 “&lt;” 放在 XML 元素中，会发生错误，这是因为解析器会把它当作新元素的开始。</p><p>在 XML 中，有 5 个预定义的实体引用：</p><pre><code>&amp;lt;&lt;&amp;gt;&gt;(合法但请这么用)&amp;amp;&amp;&amp;apos;&#39;&amp;quot;&quot;</code></pre><p>xpath</p><pre><code>/bookstore/book[1]选取属于 bookstore 子元素的第一个 book 元素。/bookstore/book[last()]选取属于 bookstore 子元素的最后一个 book 元素。/bookstore/book[last()-1]选取属于 bookstore 子元素的倒数第二个 book 元素。/bookstore/book[position()&lt;3]选取最前面的两个属于 bookstore 元素的子元素的 book 元素。//title[@lang]选取所有拥有名为 lang 的属性的 title 元素。//title[@lang=&#39;eng&#39;]选取所有 title 元素，且这些元素拥有值为 eng 的 lang 属性。/bookstore/book[price&gt;35.00]选取 bookstore 元素的所有 book 元素，且其中的 price 元素的值须大于 35.00。/bookstore/book[price&gt;35.00]//title选取 bookstore 元素中的 book 元素的所有 title 元素，且其中的 price 元素的值须大于 35.00。</code></pre>]]></content:encoded>
+      <content:encoded><![CDATA[<p>在 XML 中，一些字符拥有特殊的意义。</p><p>如果您把字符 “&lt;” 放在 XML 元素中，会发生错误，这是因为解析器会把它当作新元素的开始。</p><p>在 XML 中，有 5 个预定义的实体引用：</p><pre><code>&amp;lt;&lt;&amp;gt;&gt;(合法但请这么用)&amp;amp;&amp;&amp;apos;&#39;&amp;quot;&quot;</code></pre><p>xpath     </p><ul><li><a href="https://sm1ld.top/2023/11/07/10-25-11">xpath常用语法</a></li></ul>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/%E7%88%AC%E8%99%AB/">爬虫</category>
       
       
       <category domain="https://sm1ld.github.io/tags/xml/">xml</category>
@@ -92,10 +96,10 @@
       <content:encoded><![CDATA[<p>IntelliJ IDEA提供了许多常用的代码模板快捷键，以帮助程序员更快地编写代码。<br>以下是一些常用的代码模板快捷键和相应的功能：</p><ol><li><p><code>psvm</code>：生成主函数（public static void main(String[] args)）。</p></li><li><p><code>sout</code>：生成<code>System.out.println()</code>语句。</p></li><li><p><code>soutv</code>：生成<code>System.out.println(variable)</code>，其中<code>variable</code>是光标所在位置的变量。</p></li></ol><span id="more"></span><ol start="4"><li><p><code>fori</code>：生成基本的<code>for</code>循环结构。</p></li><li><p><code>iter</code>：生成增强的<code>for-each</code>循环结构。</p></li><li><p><code>ifn</code>：生成<code>if (variable == null)</code> 检查。</p></li><li><p><code>inn</code>：生成<code>if (variable != null)</code> 检查。</p></li><li><p><code>prsf</code>：生成<code>private static final</code> 常量。</p></li><li><p><code>psf</code>：生成<code>public static final</code> 常量。</p></li><li><p><code>psfi</code>：生成<code>public static final int</code> 整数常量。</p></li><li><p><code>psfs</code>：生成<code>public static final String</code> 字符串常量。</p></li><li><p><code>try</code>：生成<code>try-catch</code>块。</p></li><li><p><code>tryf</code>：生成<code>try-finally</code>块。</p></li><li><p><code>tryr</code>：生成<code>try-catch</code>-<code>finally</code>块。</p></li><li><p><code>ifelse</code>：生成<code>if-else</code>语句块。</p></li><li><p><code>else</code>：生成<code>else</code>语句。</p></li><li><p><code>switch</code>：生成<code>switch</code>语句块。</p></li><li><p><code>case</code>：生成<code>case</code>语句。</p></li><li><p><code>while</code>：生成<code>while</code>循环。</p></li><li><p><code>do</code>：生成<code>do-while</code>循环。</p></li><li><p><code>serr</code>：生成<code>System.err.println()</code>语句。</p></li><li><p><code>soutm</code>：生成方法的注释文档。</p></li><li><p><code>soutp</code>：生成方法参数的注释文档。</p></li><li><p><code>ifn</code>：生成<code>if (variable == null)</code> 语句块。</p></li><li><p><code>inn</code>：生成<code>if (variable != null)</code> 语句块。</p></li><li><p><code>arr.fori</code> : 生成<code>for&#39;(int i = 0; i &lt; arr.length; i++) </code>的数组迭代代码块</p></li><li><p>…</p></li></ol>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/java/">java</category>
       
       
-      <category domain="https://sm1ld.github.io/tags/java/">java</category>
+      <category domain="https://sm1ld.github.io/tags/java%E8%AF%AD%E6%B3%95/">java语法</category>
       
       
       <comments>https://sm1ld.github.io/2023/10/31/19-59-13/#disqus_thread</comments>
@@ -135,7 +139,7 @@ public class ScannerTest&amp;#123;
       <content:encoded><![CDATA[<p>跟着黑马程序员敲javacode的时候出现了一个编译错误,这里记录一下   </p><p>ScannerTest.java源代码:</p><pre><code>import java.util.Scanner;public class ScannerTest&#123;    public static void main(String[] args) &#123;              Scanner var = new Scanner(System.in);        System.out.println(&quot;输入两个数字:&quot;);        int a = var.nextInt();        int b = var.nextInt();        int c= a+b;         System.out.println(c);        var.close();    &#125;&#125;</code></pre><p>cmd javac时报错:</p><pre><code>ScannerTest.java:1: 错误: 需要 class、interface、enum 或 record锘縤mport java.util.Scanner;  </code></pre><span id="more"></span><p>但是vscode的终端运行无误.(已知文件名和类名相同,java环境无误(反正目前没问题)  ) </p><p>后来求助了大佬们,发现是这个文件保存时是utf-8编码(无BOM),而cmd读取时应该是GBK编码,导致无法正确编译.(并且有建议用IDEA写java)</p><p>解决方案:</p><ol><li><p>将文件保存为GBK格式(不推荐):<br>此时,cmd无报错,但终端运行中文出现”??????…”的情况,猜测是终端以utf-8读取文件出错,这里不予测试.</p></li><li><p>cmd javac的语句加上encoding:<br>(注意这个文件保存时是无BOM的utf-8,否则会出现类似” 非法字符: ‘\ufeff’”的报错):   </p><pre><code> javac -encoding &quot;UTF-8&quot; ScannerTest.java</code></pre></li></ol><p><a href="https://blog.csdn.net/qq_36863995/article/details/79290959">参考csdn文章链接</a></p>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/java/">java</category>
       
       
       <category domain="https://sm1ld.github.io/tags/javaerror/">javaerror</category>
@@ -163,7 +167,7 @@ public class ScannerTest&amp;#123;
       <content:encoded><![CDATA[<p>attach一段对http的科学解释:</p><blockquote><p>HTTP（Hypertext Transfer Protocol）是一种用于在计算机之间传输超文本（Hypertext）文档的应用层协议。它是构建在TCP（Transmission Control Protocol）之上的协议，用于实现在Web上的数据传输。HTTP是Web的基础，它定义了客户端和服务器之间的通信规则，使我们能够在浏览器中浏览网页、发送和接收数据等。  </p></blockquote><p>主要定义的事情就是:<br>client–&gt;(user agent用户代理&#x2F;proxy代理)发送请求–&gt;server<br>client&lt;–(user agent用户代理&#x2F;proxy代理)发送请求&lt;–server  </p><h1 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h1><span id="more"></span><h2 id="user-agent"><a href="#user-agent" class="headerlink" title="user agent"></a>user agent</h2><p>浏览器通常作为发送请求的实体,发送最初请求获取页面的 HTML 文档。解析文档，并发送其他请求，获取响应的可执行脚本、布局信息（CSS）以及其他页面内的资源（一般是图片和视频等）。浏览器将这些资源整合到一起，展现出一个完整的文档，即 Web 页面。之后的阶段，浏览器中执行的脚本可以获取更多资源，同时浏览器相应地更新网页。</p><h2 id="web-server"><a href="#web-server" class="headerlink" title="web server"></a>web server</h2><p>服务端(可以是多台机器,共享负载的一组服务器集群（负载均衡）或是其他类型的软件（如缓存、数据库服务、电商服务等）)为客户端提供所需文档</p><h2 id="proxy"><a href="#proxy" class="headerlink" title="proxy"></a>proxy</h2><p>应用层参与消息传递</p><h2 id="HTTP和网络连接"><a href="#HTTP和网络连接" class="headerlink" title="HTTP和网络连接"></a>HTTP和网络连接</h2><p>HTTP&#x2F;1.0 默认为每一对HTTP请求&#x2F;响应都打开一个单独的 TCP 连接</p><h2 id="request请求"><a href="#request请求" class="headerlink" title="request请求"></a>request请求</h2><pre><code>GET(method) /(path) HTTP/1.1(protocol version)    Host: developer.mozilla.org   Accept-Language: zh  (headers标头) ``` </code></pre><p><strong>method</strong>:定义客户端执行的动作<br><strong>path</strong>:去除部分信息(https:&#x2F;&#x2F;;域名;端口)</p><h2 id="response响应"><a href="#response响应" class="headerlink" title="response响应"></a>response响应</h2><pre><code>HTTP/1.1(protocol version)  200(status code) OK(status message)   Date: Sat, 09 Oct 2010 14:28:02 GMT  Server: Apache   Last-Modified: Tue, 01 Dec 2009 20:18:22 GMT  ETag: &quot;51142bc1-7449-479b075b2891b&quot;   Accept-Ranges: bytes   Content-Length: 29769    Content-Type: text/html(headers)</code></pre><h2 id="HTTP-Cookie"><a href="#HTTP-Cookie" class="headerlink" title="HTTP Cookie"></a>HTTP Cookie</h2><p>HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据.</p><p>服务器使用 <code>Set-Cookie</code> 响应头部向用户代理（一般是浏览器）发送 Cookie 信息。</p><pre><code>Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;</code></pre><p>服务器发送标头告知客户端存储一对 cookie:</p><pre><code>HTTP/1.0 200 OK  Content-type: text/html   Set-Cookie: yummy_cookie=choco     Set-Cookie: tasty_cookie=strawberry       </code></pre><p>现在，对该服务器发起的每一次新请求，浏览器都会将之前保存的 Cookie 信息通过 <code>Cookie</code> 请求头部再发送给服务器:</p><pre><code>GET /sample_page.html HTTP/1.1   Host: www.example.org   Cookie: yummy_cookie=choco; tasty_cookie=strawberry   </code></pre><h1 id="METHOD"><a href="#METHOD" class="headerlink" title="METHOD"></a>METHOD</h1><h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h2><p>HTTP GET 方法请求指定资源的表示。使用 GET 的请求应该只用于请求数据，而不应该包含数据。</p><pre><code>GET /index.html    </code></pre><p>query string:</p><pre><code>?key1=value1&amp;key2=value2&amp;key3=value3</code></pre><h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h2><p>HTTP POST 方法发送数据给服务器。请求主体的类型由 <code>Content-Type</code> 标头指定。(非幂等)</p><pre><code>POST /test HTTP/1.1     Host: foo.example     Content-Type: application/x-www-form-urlencoded      Content-Length: 27  field1=value1&amp;field2=value2</code></pre><h1 id="HEADER"><a href="#HEADER" class="headerlink" title="HEADER"></a>HEADER</h1><h2 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h2><p>实体头部用于指示资源的 MIME 类型 media type 。</p><pre><code>application/x-www-form-urlencoded :query string键值对的结构，键值对之间使用 &amp; 分割，键与值之间使用 = 分割multipart/form-data :这是 form 表单提交的数据格式（需要在 from 标签上加上 enctyped=&quot;multipart/form-data&quot;），通常用于 HTML 提交图片或者文件application/json:此时 body 数据为 json 格式，json 格式就是源自 js 的对象的格式。用一个 &#123; &#125; 括住，里面有多个键值对，键值对之间使用逗号分割，键和值之间使用冒号分割</code></pre><h2 id="Host"><a href="#Host" class="headerlink" title="Host"></a>Host</h2><p>请求头指明了请求将要发送到的服务器主机名和端口号。</p><pre><code>Host: &lt;host&gt;:&lt;port&gt;</code></pre><h2 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h2><p>请求标头 <code>Origin</code> 表示了请求的来源（协议、主机、端口）。</p><pre><code>Origin: null   Origin: &lt;scheme&gt;://&lt;hostname&gt;   Origin: &lt;scheme&gt;://&lt;hostname&gt;:&lt;port&gt;   </code></pre><h2 id="Referer"><a href="#Referer" class="headerlink" title="Referer"></a>Referer</h2><p><code>Referer</code> 请求头包含了当前请求页面的来源页面的地址，即表示当前页面是通过此来源页面里的链接进入的</p><pre><code>Referer: &lt;url&gt;</code></pre><h2 id="User-Agent"><a href="#User-Agent" class="headerlink" title="User-Agent"></a>User-Agent</h2><p><code>User-Agent</code> 首部包含了一个特征字符串，用来让网络协议的对端来识别发起请求的用户代理软件的应用类型、操作系统、软件开发商以及版本号</p><pre><code>User-Agent: &lt;product&gt; / &lt;product-version&gt; &lt;comment&gt;   </code></pre><h2 id="X-Forwarded-For"><a href="#X-Forwarded-For" class="headerlink" title="X-Forwarded-For"></a>X-Forwarded-For</h2><p><code>X-Forwarded-For</code>（XFF）请求标头是一个事实上的用于标识通过代理服务器连接到 web 服务器的客户端的原始 IP 地址的标头。</p><pre><code>X-Forwarded-For: &lt;client&gt;, &lt;proxy1&gt;, &lt;proxy2&gt;</code></pre><p>有题目里用<code>Client-Ip</code></p><p>有待补充…</p>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/net/">net</category>
       
       
       <category domain="https://sm1ld.github.io/tags/http/">http</category>
@@ -186,7 +190,7 @@ public class ScannerTest&amp;#123;
       <content:encoded><![CDATA[<p><b>dos命令</b>  </p><span id="more"></span><ul><li><code>dir</code> 列出当前目录的文件及夹 </li><li><code>cd\*\\*</code> 进入指定目录   </li><li><code>cd..</code> 返回上层目录     </li><li><code>cd\\or/</code>  返回盘符   </li><li><code>md</code> 新建文件</li><li><code>rd</code> 删除空文件夹</li><li><code>del</code> 删除文件  </li><li><code>cls</code> 清屏</li></ul>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/cmd/">cmd</category>
       
       
       <category domain="https://sm1ld.github.io/tags/dos/">dos</category>
@@ -213,7 +217,7 @@ public class ScannerTest&amp;#123;
       <content:encoded><![CDATA[<p>在学php表单验证的时候看见了一长串乱码（准确来说不是乱码，是我看不懂）</p><pre><code>/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&amp;@#\/%?=~|!:,.;]*[-a-z0-9+&amp;@#\/%=~|]/i      </code></pre><p>然后搜索才发现这是js里的正则表达式的内容，囫囵吞枣果然不行，所以稍微记一下，做个纪念</p><span id="more"></span><p>正则表达式是一种用于匹配和操作字符串的工具，它使用特定的语法来描述模式。下面是一些常见的正则表达式语法：    </p><ol><li><p>字符匹配：<br>普通字符：直接匹配文本中的字符。<br>元字符：具有特殊含义的字符，如.、*、?等。<br>转义字符：用于匹配具有特殊含义的字符，如\、^、$等。     </p></li><li><p>字符类：<br>方括号([])：匹配方括号中的任意一个字符。<br>横线(-)：匹配指定范围内的字符，如[a-z]匹配任意小写字母。      </p></li><li><p>重复限定符：<br>*：匹配前一个元素0次或多次。<br>+：匹配前一个元素1次或多次。<br>?：匹配前一个元素0次或1次。<br>{n}：匹配前一个元素恰好n次。<br>{n,}：匹配前一个元素至少n次。<br>{n,m}：匹配前一个元素至少n次，最多m次。</p></li><li><p>边界匹配：<br>^：匹配字符串的开始位置。<br>$：匹配字符串的结束位置。<br>\b：匹配单词的边界。            </p></li><li><p>分组和捕获：<br>( )：将多个元素组合为一个单元。<br>|：匹配多个选择项，类似于逻辑或。<br>\1, \2, …：引用前面的分组匹配结果。   </p></li><li><p>预定义字符类：<br>\d：匹配任意数字字符。<br>\w：匹配任意字母、数字或下划线字符。<br>\s：匹配任意空白字符。</p></li></ol><p>这只是正则表达式语法的一小部分，还有很多其他的语法规则和特性。使用正则表达式时，可以根据具体需求和匹配规则进行组合和使用。  </p>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/hcj/">hcj</category>
       
       
       <category domain="https://sm1ld.github.io/tags/js/">js</category>
@@ -236,7 +240,7 @@ public class ScannerTest&amp;#123;
       <content:encoded><![CDATA[<p>这里记录一些css笔记，因为本人记不住</p><span id="more"></span><p>通常在head里以<code>&lt;style\&gt;</code>打头，在其中设置格式   </p><ul><li><p>当为”元素.类”时需要在&lt;&gt;中用<code>class=&quot;类&quot;</code>运用</p></li><li><p>去除下划线</p><pre><code>  &lt;style\&gt;     a &#123;text-decoration:none;&#125;     &lt;/style\&gt;     &lt;p\&gt;链接到: &lt;a href=&quot;&quot;\&gt;&lt;/&gt;a&gt;&lt;/p\&gt;  </code></pre></li><li><p><a href="https://www.runoob.com/css/css-combinators.html">css组合选择符</a> （后代子代兄弟…</p></li><li><p><a href="https://www.runoob.com/css/css-align.html">对齐</a> （垂直水平</p></li></ul>]]></content:encoded>
       
       
-      <category domain="https://sm1ld.github.io/categories/note/">note</category>
+      <category domain="https://sm1ld.github.io/categories/hcj/">hcj</category>
       
       
       <category domain="https://sm1ld.github.io/tags/css/">css</category>

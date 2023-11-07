@@ -8,12 +8,12 @@
       <link href="/2023/11/07/10-25-11/"/>
       <url>/2023/11/07/10-25-11/</url>
       
-        <content type="html"><![CDATA[<p>XPath（XML Path Language）是一种用于在 XML 文档中定位和选择数据的查询语言。以下是一些常用的 XPath 语法和示例：</p><ol><li><p>选择元素：</p><ul><li><code>/element</code>：选择根元素下名为 “element” 的元素。</li><li><code>//element</code>：选择文档中所有名为 “element” 的元素。</li></ul></li><li><p>选择属性：</p><ul><li><code>/element/@attribute</code>：选择根元素下名为 “element” 的元素的 “attribute” 属性。</li><li><code>//element/@attribute</code>：选择文档中所有名为 “element” 的元素的 “attribute” 属性。</li></ul></li><li><p>使用通配符：</p><ul><li><code>/bookstore/*</code>：选择根元素下所有子元素。</li><li><code>//*[@lang=&#39;en&#39;]</code>：选择所有带有 “lang” 属性且属性值为 “en” 的元素。</li></ul></li><li><p>索引：</p><ul><li><code>/bookstore/book[1]</code>：选择根元素下的第一个 “book” 元素。</li><li><code>/bookstore/book[last()]</code>：选择根元素下的最后一个 “book” 元素。</li><li><code>/bookstore/book[position() &lt; 3]</code>：选择根元素下的前两个 “book” 元素。</li></ul></li><li><p>使用逻辑运算符：</p><ul><li><code>//book[@price&gt;35 and @lang=&#39;en&#39;]</code>：选择价格大于 35 并且语言是 “en” 的所有 “book” 元素。</li></ul></li><li><p>使用通配符和索引结合：</p><ul><li><code>/bookstore/book/*[3]</code>：选择根元素下的所有 “book” 元素的第三个子元素。</li></ul></li><li><p>使用函数：</p><ul><li><code>//book[starts-with(@title, &#39;XML&#39;)]</code>：选择标题以 “XML” 开头的所有 “book” 元素。</li></ul></li><li><p>轴（Axis）：</p><ul><li><code>//book/ancestor::bookstore</code>：选择所有 “book” 元素的祖先 “bookstore” 元素。</li><li><code>//book/following-sibling::book</code>：选择所有 “book” 元素后面的同级兄弟 “book” 元素。</li></ul></li><li><p>选择文本内容：</p><ul><li><code>//book/title/text()</code>：选择所有 “book” 元素的标题文本内容。</li></ul></li><li><p>选择多个条件：</p></li></ol><ul><li><code>//book[@price&gt;35 and (@lang=&#39;en&#39; or @lang=&#39;fr&#39;)]</code>：选择价格大于 35 并且语言是 “en” 或 “fr” 的所有 “book” 元素。</li></ul><p>这些是 XPath 的一些常用语法。XPath 具有强大的功能，可以用于从 XML 文档中选择、定位和提取所需的数据。根据需要，可以进一步深入学习 XPath 并使用更复杂的表达式和函数。</p>]]></content>
+        <content type="html"><![CDATA[<p>XPath（XML Path Language）是一种用于在 XML 文档中定位和选择数据的查询语言。以下是一些常用的 XPath 语法和示例：</p><ol><li><p>选择元素：</p><ul><li><code>/element</code>：选择根元素下名为 “element” 的元素。</li><li><code>//element</code>：选择文档中所有名为 “element” 的元素。</li></ul></li><li><p>选择属性：</p><ul><li><code>/element/@attribute</code>：选择根元素下名为 “element” 的元素的 “attribute” 属性。</li><li><code>//element/@attribute</code>：选择文档中所有名为 “element” 的元素的 “attribute” 属性。<span id="more"></span></li></ul></li><li><p>使用通配符：</p><ul><li><code>/bookstore/*</code>：选择根元素下所有子元素。</li><li><code>//*[@lang=&#39;en&#39;]</code>：选择所有带有 “lang” 属性且属性值为 “en” 的元素。</li></ul></li><li><p>索引：</p><ul><li><code>/bookstore/book[1]</code>：选择根元素下的第一个 “book” 元素。</li><li><code>/bookstore/book[last()]</code>：选择根元素下的最后一个 “book” 元素。</li><li><code>/bookstore/book[position() &lt; 3]</code>：选择根元素下的前两个 “book” 元素。</li></ul></li><li><p>使用逻辑运算符：</p><ul><li><code>//book[@price&gt;35 and @lang=&#39;en&#39;]</code>：选择价格大于 35 并且语言是 “en” 的所有 “book” 元素。</li></ul></li><li><p>使用通配符和索引结合：</p><ul><li><code>/bookstore/book/*[3]</code>：选择根元素下的所有 “book” 元素的第三个子元素。</li></ul></li><li><p>使用函数：</p><ul><li><code>//book[starts-with(@title, &#39;XML&#39;)]</code>：选择标题以 “XML” 开头的所有 “book” 元素。</li></ul></li><li><p>轴（Axis）：</p><ul><li><code>//book/ancestor::bookstore</code>：选择所有 “book” 元素的祖先 “bookstore” 元素。</li><li><code>//book/following-sibling::book</code>：选择所有 “book” 元素后面的同级兄弟 “book” 元素。</li></ul></li><li><p>选择文本内容：</p><ul><li><code>//book/title/text()</code>：选择所有 “book” 元素的标题文本内容。</li></ul></li><li><p>选择多个条件：</p></li></ol><ul><li><code>//book[@price&gt;35 and (@lang=&#39;en&#39; or @lang=&#39;fr&#39;)]</code>：选择价格大于 35 并且语言是 “en” 或 “fr” 的所有 “book” 元素。</li></ul><p>这些是 XPath 的一些常用语法。XPath 具有强大的功能，可以用于从 XML 文档中选择、定位和提取所需的数据。根据需要，可以进一步深入学习 XPath 并使用更复杂的表达式和函数。</p>]]></content>
       
       
       <categories>
           
-          <category> note </category>
+          <category> 爬虫 </category>
           
       </categories>
       
@@ -33,12 +33,12 @@
       <link href="/2023/11/02/18-02-38/"/>
       <url>/2023/11/02/18-02-38/</url>
       
-        <content type="html"><![CDATA[<p>在 XML 中，一些字符拥有特殊的意义。</p><p>如果您把字符 “&lt;” 放在 XML 元素中，会发生错误，这是因为解析器会把它当作新元素的开始。</p><p>在 XML 中，有 5 个预定义的实体引用：</p><pre><code>&amp;lt;&lt;&amp;gt;&gt;(合法但请这么用)&amp;amp;&amp;&amp;apos;&#39;&amp;quot;&quot;</code></pre><p>xpath</p><pre><code>/bookstore/book[1]选取属于 bookstore 子元素的第一个 book 元素。/bookstore/book[last()]选取属于 bookstore 子元素的最后一个 book 元素。/bookstore/book[last()-1]选取属于 bookstore 子元素的倒数第二个 book 元素。/bookstore/book[position()&lt;3]选取最前面的两个属于 bookstore 元素的子元素的 book 元素。//title[@lang]选取所有拥有名为 lang 的属性的 title 元素。//title[@lang=&#39;eng&#39;]选取所有 title 元素，且这些元素拥有值为 eng 的 lang 属性。/bookstore/book[price&gt;35.00]选取 bookstore 元素的所有 book 元素，且其中的 price 元素的值须大于 35.00。/bookstore/book[price&gt;35.00]//title选取 bookstore 元素中的 book 元素的所有 title 元素，且其中的 price 元素的值须大于 35.00。</code></pre>]]></content>
+        <content type="html"><![CDATA[<p>在 XML 中，一些字符拥有特殊的意义。</p><p>如果您把字符 “&lt;” 放在 XML 元素中，会发生错误，这是因为解析器会把它当作新元素的开始。</p><p>在 XML 中，有 5 个预定义的实体引用：</p><pre><code>&amp;lt;&lt;&amp;gt;&gt;(合法但请这么用)&amp;amp;&amp;&amp;apos;&#39;&amp;quot;&quot;</code></pre><p>xpath     </p><ul><li><a href="https://sm1ld.top/2023/11/07/10-25-11">xpath常用语法</a></li></ul>]]></content>
       
       
       <categories>
           
-          <category> note </category>
+          <category> 爬虫 </category>
           
       </categories>
       
@@ -63,14 +63,14 @@
       
       <categories>
           
-          <category> note </category>
+          <category> java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> java </tag>
+            <tag> java语法 </tag>
             
         </tags>
       
@@ -88,7 +88,7 @@
       
       <categories>
           
-          <category> note </category>
+          <category> java </category>
           
       </categories>
       
@@ -113,7 +113,7 @@
       
       <categories>
           
-          <category> note </category>
+          <category> net </category>
           
       </categories>
       
@@ -138,7 +138,7 @@
       
       <categories>
           
-          <category> note </category>
+          <category> cmd </category>
           
       </categories>
       
@@ -163,7 +163,7 @@
       
       <categories>
           
-          <category> note </category>
+          <category> hcj </category>
           
       </categories>
       
@@ -188,7 +188,7 @@
       
       <categories>
           
-          <category> note </category>
+          <category> hcj </category>
           
       </categories>
       
