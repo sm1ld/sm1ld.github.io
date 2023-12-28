@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"sm1ld.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Scrapy是一个用于爬取网站数据的Python框架，它基于Twisted异步网络库。以下是使用Scrapy创建爬虫的基本步骤：  安装Scrapy： 在命令行中运行以下命令安装Scrapy。  pip install scrapy   创建新的Scrapy项目： 在命令行中运行以下命令，创建一个新的Scrapy项目。  scrapy startproject your_project_name">
+  <meta name="description" content="Scrapy是一个用于爬取网站数据的Python框架，它基于Twisted异步网络库。以下是使用Scrapy创建爬虫的基本步骤：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="scrapy项目启动">
 <meta property="og:url" content="https://sm1ld.github.io/2023/12/28/19-17-55/index.html">
 <meta property="og:site_name" content="SM1LD">
-<meta property="og:description" content="Scrapy是一个用于爬取网站数据的Python框架，它基于Twisted异步网络库。以下是使用Scrapy创建爬虫的基本步骤：  安装Scrapy： 在命令行中运行以下命令安装Scrapy。  pip install scrapy   创建新的Scrapy项目： 在命令行中运行以下命令，创建一个新的Scrapy项目。  scrapy startproject your_project_name">
+<meta property="og:description" content="Scrapy是一个用于爬取网站数据的Python框架，它基于Twisted异步网络库。以下是使用Scrapy创建爬虫的基本步骤：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-28T11:17:55.000Z">
-<meta property="article:modified_time" content="2023-12-28T11:27:49.290Z">
+<meta property="article:modified_time" content="2023-12-28T11:30:05.662Z">
 <meta property="article:author" content="sm1ld">
 <meta property="article:tag" content="scrapy框架">
 <meta name="twitter:card" content="summary">
@@ -222,7 +222,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-12-28 19:17:55 / 修改时间：19:27:49" itemprop="dateCreated datePublished" datetime="2023-12-28T19:17:55+08:00">2023-12-28</time>
+              <time title="创建时间：2023-12-28 19:17:55 / 修改时间：19:30:05" itemprop="dateCreated datePublished" datetime="2023-12-28T19:17:55+08:00">2023-12-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -247,7 +247,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>278</span>
+              <span>279</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -267,6 +267,9 @@
 
       
         <p><code>Scrapy</code>是一个用于爬取网站数据的<code>Python</code>框架，它基于<code>Twisted</code>异步网络库。以下是使用<code>Scrapy</code>创建爬虫的基本步骤：</p>
+<span id="more"></span>
+
+
 <ol>
 <li><p>安装<code>Scrapy</code>： 在命令行中运行以下命令安装<code>Scrapy</code>。</p>
 <pre><code> pip install scrapy
@@ -292,7 +295,7 @@
      start_urls = [&#39;http://www.example.com&#39;]
      def parse(self, response):
          # 提取数据的逻辑
- pass
+         pass
 </code></pre>
 </li>
 <li><p>运行爬虫： 在项目目录中运行以下命令，启动爬虫。</p>
