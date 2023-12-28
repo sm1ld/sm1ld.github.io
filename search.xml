@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>scrapy项目启动</title>
+      <link href="/2023/12/28/19-17-55/"/>
+      <url>/2023/12/28/19-17-55/</url>
+      
+        <content type="html"><![CDATA[<p><code>Scrapy</code>是一个用于爬取网站数据的<code>Python</code>框架，它基于<code>Twisted</code>异步网络库。以下是使用<code>Scrapy</code>创建爬虫的基本步骤：</p><ol><li><p>安装<code>Scrapy</code>： 在命令行中运行以下命令安装<code>Scrapy</code>。</p><pre><code> pip install scrapy</code></pre></li><li><p>创建新的<code>Scrapy</code>项目： 在命令行中运行以下命令，创建一个新的<code>Scrapy</code>项目。</p><pre><code> scrapy startproject your_project_name</code></pre><p>  这将创建一个名为<code>your_project_name</code>的目录，其中包含一个Scrapy项目的基本结构。</p></li><li><p>创建爬虫： 进入项目目录并创建一个新的爬虫。</p><pre><code> cd your_project_name scrapy genspider your_spider_name example.com</code></pre><p> 这将在spiders目录下创建一个名为<code>your_spider_name</code>的爬虫，它将从example.com网站开始爬取数据。</p></li><li><p>编辑爬虫代码： 打开生成的爬虫文件（在<code>your_project_name/spiders/</code>目录下），编辑<code>start_urls</code>和<code>parse</code>方法，定义如何提取数据。</p><pre><code> import scrapy class YourSpiderNameSpider(scrapy.Spider):     name = &#39;your_spider_name&#39;     allowed_domains = [&#39;example.com&#39;]     start_urls = [&#39;http://www.example.com&#39;]     def parse(self, response):         # 提取数据的逻辑 pass</code></pre></li><li><p>运行爬虫： 在项目目录中运行以下命令，启动爬虫。</p><pre><code> scrapy crawl your_spider_name</code></pre><p>  爬虫将开始执行，并在控制台上显示爬取的数据。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> scrapy框架 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>xpathnote</title>
       <link href="/2023/11/07/10-25-11/"/>
       <url>/2023/11/07/10-25-11/</url>
